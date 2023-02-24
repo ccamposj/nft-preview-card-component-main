@@ -1,0 +1,144 @@
+:root {
+  /* PRIMARY */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* NEUTRAL */
+  --main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-BG);
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.card {
+  max-width: 33rem;
+  background-color: var(--card-BG);
+  padding: 2.2rem 2.4rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.4);
+}
+
+.img-box {
+  margin-bottom: 1.8rem;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.icon {
+  z-index: 5;
+}
+
+.cyan-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 247, 0.4);
+}
+
+.img-box:hover .hover {
+  opacity: 1;
+  transition: all 300ms;
+}
+
+.equilibrium-img {
+  width: 100%;
+}
+
+.text-box {
+  margin-bottom: 1.6rem;
+}
+
+.heading {
+  color: var(--white);
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.text {
+  color: var(--soft-blue);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.sub-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1px inset var(--line);
+  padding-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.price {
+  color: var(--cyan);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.price p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.author {
+  margin-bottom: 0.6rem;
+}
+
+.author-img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 10000rem;
+  border: 1px solid var(--white);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--white);
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: inherit;
+}
