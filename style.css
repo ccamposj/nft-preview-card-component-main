@@ -142,6 +142,11 @@ main {
   color: inherit;
 }
 
+.author-name {
+  color: var(--white);
+  font-weight: 500;
+}
+
 .heading,
 .author-name {
   transition: all 0.3s;
